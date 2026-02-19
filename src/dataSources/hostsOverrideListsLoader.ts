@@ -22,9 +22,22 @@ function removeWww(domain: string): string {
   return domain;
 }
 
+const EXCLUDED_DOMAINS = [
+  'spotify',
+  'instagram',
+  'facebook',
+  'discord',
+  'notion',
+  // Add more excluded domain patterns here
+];
+
+function isExcluded(website: string): boolean {
+  return EXCLUDED_DOMAINS.some(pattern => website.includes(pattern));
+}
+
 export async function fetchWebsites(urls: string[]): Promise<BypassRoute[]> {
   const results = await Promise.all(urls.map(url => fetchList(url)));
-  
+
   return results
     .flatMap(content => content.split(/\r?\n/))
     .filter(line => line.trim() !== '')
@@ -37,7 +50,8 @@ export async function fetchWebsites(urls: string[]): Promise<BypassRoute[]> {
       const website = removeWww(line.substring(delimiter + 1).trim());
       return { ip, website };
     })
-    .filter((value, index, self) => 
+    .filter(({ website }) => !isExcluded(website))
+    .filter((value, index, self) =>
       index === self.findIndex(t => t.website === value.website)
     );
 }
