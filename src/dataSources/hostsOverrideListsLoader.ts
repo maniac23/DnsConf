@@ -50,6 +50,7 @@ export async function fetchWebsites(urls: string[]): Promise<BypassRoute[]> {
       const website = removeWww(line.substring(delimiter + 1).trim());
       return { ip, website };
     })
+    .filter(({ ip, website }) => ip.length > 0 && website.length > 0)
     .filter(({ website }) => !isExcluded(website))
     .filter((value, index, self) =>
       index === self.findIndex(t => t.website === value.website)
