@@ -1,5 +1,5 @@
 ### dns.geohide.ru: hosts file
-# Последнее обновление: 09.09.2026 21:21:03
+# Последнее обновление: 11.09.2026 04:43:23
 # Регион: RU
 
 # Работающие IP без прокси
@@ -107,6 +107,14 @@
 193.233.112.88 oaiusercontent.com
 193.233.112.88 www.oaiusercontent.com
 193.233.112.68 www.oaiusercontent.com
+193.233.112.68 oaistatic.com
+193.233.112.88 oaistatic.com
+193.233.112.88 www.oaistatic.com
+193.233.112.68 www.oaistatic.com
+193.233.112.88 openai.com
+193.233.112.68 openai.com
+193.233.112.68 www.openai.com
+193.233.112.88 www.openai.com
 
 # Claude
 193.233.112.88 a-api.anthropic.com
@@ -183,10 +191,20 @@
 193.233.112.88 marketplace.cursorapi.com
 193.233.112.88 repo42.cursor.sh
 193.233.112.68 repo42.cursor.sh
-193.233.112.88 microchip.com
-193.233.112.68 microchip.com
-193.233.112.68 www.microchip.com
-193.233.112.88 www.microchip.com
+193.233.112.88 cursor-cdn.com
+193.233.112.68 cursor-cdn.com
+193.233.112.68 www.cursor-cdn.com
+193.233.112.88 www.cursor-cdn.com
+193.233.112.68 cursorvm.com
+193.233.112.88 cursorvm.com
+193.233.112.88 www.cursorvm.com
+193.233.112.68 www.cursorvm.com
+193.233.112.68 us-asia.gcpp.cursor.sh
+193.233.112.88 us-asia.gcpp.cursor.sh
+193.233.112.68 us-eu.gcpp.cursor.sh
+193.233.112.88 us-eu.gcpp.cursor.sh
+193.233.112.68 us-only.gcpp.cursor.sh
+193.233.112.88 us-only.gcpp.cursor.sh
 
 # DeepL
 193.233.112.88 deepl.app
@@ -473,6 +491,18 @@
 193.233.112.88 api.jetbrains.ai
 193.233.112.68 account.jetbrains.com
 193.233.112.88 account.jetbrains.com
+193.233.112.88 jetbrains.com
+193.233.112.68 jetbrains.com
+193.233.112.68 www.jetbrains.com
+193.233.112.88 www.jetbrains.com
+193.233.112.68 jetbrains.space
+193.233.112.88 jetbrains.space
+193.233.112.88 www.jetbrains.space
+193.233.112.68 www.jetbrains.space
+193.233.112.88 myjetbrains.com
+193.233.112.68 myjetbrains.com
+193.233.112.68 www.myjetbrains.com
+193.233.112.88 www.myjetbrains.com
 
 # Make
 193.233.112.88 make.com
@@ -555,6 +585,10 @@
 193.233.112.68 openrouter.ai
 193.233.112.68 www.openrouter.ai
 193.233.112.88 www.openrouter.ai
+193.233.112.88 eu.openrouter.ai
+193.233.112.68 eu.openrouter.ai
+193.233.112.88 us.openrouter.ai
+193.233.112.68 us.openrouter.ai
 
 # TeamViewer
 193.233.112.68 download.teamviewer.com
@@ -651,10 +685,6 @@
 193.233.112.68 netapp.com
 193.233.112.68 octanorm.com
 193.233.112.88 octanorm.com
-193.233.112.88 openaiapi-site.azureedge.net
-193.233.112.68 openaiapi-site.azureedge.net
-193.233.112.88 openaipublic.blob.core.windows.net
-193.233.112.68 openaipublic.blob.core.windows.net
 193.233.112.88 padi.com
 193.233.112.68 padi.com
 193.233.112.88 pandasecurity.com
